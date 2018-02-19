@@ -1,2 +1,2 @@
 # FSM-based-trace-analysis
-Import or convert trace data with nested structure using Finite State Machine
+Often we come across trace files which have nested structure. For example, if we take a raw packet trace it might contain L2 frames encapsulated within IP packets encapsulated within datagrams, so on. This code implement finite state machine to efficiently extract data from such traces. The example use here is a sFLOW trace collected from a network. It is a collection of many datagrams. Each datagram has its own properties and may consists of multiple flow samples. Like wise each flow sample has its own attributes. See example trace in the data folder which is the same file use in the test.py.
